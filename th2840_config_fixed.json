@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "name": "TH2840全自动测试系统配置",
+    "version": "1.0.0",
+    "description": "TH2840曲线扫描软件全自动测试系统配置",
+    "created_date": "2026-04-21",
+    "author": "大董老师",
+    "last_updated": "2026-04-21"
+  },
+  "software_paths": {
+    "th2840_exe": "C:\\Users\\BMF\\Desktop\\此电脑\\TH2840曲线扫描.exe",
+    "desktop_controller": "D:\\Code\\Desktop_controller\\openclaw_desktop_controller.py",
+    "python_env": "D:\\Anaconda3\\envs\\openclaw\\python.exe"
+  },
+  "ui_coordinates": {
+    "config_phase": [
+      {
+        "name": "任务栏图标",
+        "x": 705,
+        "y": 1062,
+        "action": "click",
+        "description": "单击激活窗口"
+      },
+      {
+        "name": "连接按钮",
+        "x": 865,
+        "y": 603,
+        "action": "click",
+        "description": "单击连接仪器"
+      },
+      {
+        "name": "完成按钮(连接)",
+        "x": 957,
+        "y": 594,
+        "action": "click",
+        "description": "单击确认连接"
+      },
+      {
+        "name": "设置按钮",
+        "x": 1387,
+        "y": 576,
+        "action": "click",
+        "description": "单击打开设置"
+      },
+      {
+        "name": "测试项框",
+        "x": 941,
+        "y": 363,
+        "action": "click",
+        "description": "单击打开测试模式选择"
+      },
+      {
+        "name": "上拉位置",
+        "x": 954,
+        "y": 334,
+        "action": "click",
+        "description": "单击将选择框拉到最上层"
+      },
+      {
+        "name": "测试项框(再次)",
+        "x": 941,
+        "y": 363,
+        "action": "click",
+        "description": "再次点击以显示下拉菜单选项"
+      },
+      {
+        "name": "Cs模式位置",
+        "x": 938,
+        "y": 380,
+        "action": "click",
+        "description": "单击选择Cs测试模式"
+      }
+    ],
+    "test_phase": [
+      {
+        "name": "开始测试按钮",
+        "x": 1392,
+        "y": 721,
+        "action": "click",
+        "description": "单击开始测试"
+      },
+      {
+        "name": "停止测试按钮",
+        "x": 1386,
+        "y": 767,
+        "action": "click",
+        "description": "单击停止测试"
+      }
+    ],
+    "save_phase": [
+      {
+        "name": "保存按钮",
+        "x": 1386,
+        "y": 670,
+        "action": "click",
+        "description": "单击打开保存对话框"
+      },
+      {
+        "name": "此电脑按钮",
+        "x": 737,
+        "y": 560,
+        "action": "click",
+        "description": "单击选择此电脑"
+      },
+      {
+        "name": "右侧滑动条",
+        "x": 1224,
+        "y": 647,
+        "action": "double_click",
+        "description": "双击将目录拉到最下方"
+      },
+      {
+        "name": "E盘位置",
+        "x": 885,
+        "y": 642,
+        "action": "double_click",
+        "description": "双击打开E盘"
+      },
+      {
+        "name": "A-Openclaw文件夹",
+        "x": 851,
+        "y": 425,
+        "action": "double_click",
+        "description": "双击打开目标文件夹"
+      },
+      {
+        "name": "文件名框",
+        "x": 905,
+        "y": 688,
+        "action": "click",
+        "description": "单击后输入文件名"
+      }
+    ],
+    "cleanup_phase": [
+      {
+        "name": "清除按钮",
+        "x": 1390,
+        "y": 622,
+        "action": "click",
+        "description": "单击清除测试数据"
+      }
+    ]
+  },
+  "timing_config": {
+    "software_startup_delay": 2,
+    "window_activation_delay": 0.5,
+    "connection_delay": 1,
+    "settings_delay": 0.5,
+    "mode_selection_delay": 0.3,
+    "parameter_input_delay": 0.2,
+    "test_start_delay": 1,
+    "test_stop_delay": 1,
+    "save_dialog_delay": 1,
+    "file_navigation_delay": 0.5,
+    "filename_input_delay": 0.3,
+    "cleanup_delay": 0.5
+  },
+  "default_parameters": {
+    "test_mode": "Cs模式",
+    "test_frequency": 100,
+    "sampling_interval": 0.001,
+    "test_duration": 10
+  },
+  "file_naming": {
+    "format": "YYYY-MM-DD-N",
+    "save_path": "E:\\A-Openclaw\\",
+    "auto_increment": true,
+    "start_number": 1
+  },
+  "validation": {
+    "tested_count": 4,
+    "success_rate": 1.0,
+    "average_time": 47,
+    "manual_time": 150,
+    "efficiency_gain": 0.8
+  }
+}
